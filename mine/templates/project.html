@@ -1,0 +1,64 @@
+{% load static %}
+
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+
+</head>
+<body>
+
+    <ul class="nav nav-underline">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+        </li>
+        <li class="nav-item">
+            <a  class="nav-link" href="/services/">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contact/">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/project/">Project</a>
+        </li>
+    
+    </ul>
+<div class="gallery">
+
+    <img src="{% static 'img/web7.AVIF' %}"  width="500"  alt="back" class="image" >
+    <img src="{% static 'img/web2.JPG' %}"  width="500"  alt="back" class="image" >
+    <img src="{% static 'img/web5.AVIF' %}"  width="500"  alt="back" class="image" >
+
+</div>
+
+
+<div class="container">
+    <h1 class="section-title">PROJECTS</h1>
+    <div class="project">
+        <h2 class="project-title"> Website Redesign</h2>
+        <p class="project-description">Redesigned the corporate website to enhance user experience and improve brand visibility. Implemented modern design elements and responsive layouts to ensure compatibility across all devices.</p>
+        <p class="project-client">Client: Apen Corporation</p>
+        <p class="project-completion">Completion Date: January 2024</p>
+    </div>
+    <div class="project">
+        <h2 class="project-title">Mobile App Development</h2>
+        <p class="project-description">Developed a native mobile application for Emobilis Company, focusing on delivering seamless user interactions and robust performance. Integrated advanced features and optimized code for optimal user experience.</p>
+        <p class="project-client">Client: Emobilis Company</p>
+        <p class="project-completion">Completion Date: March 2024</p>
+    </div>
+    <div class="project">
+        <h2 class="project-title"> E-commerce Platform</h2>
+        <p class="project-description">Designed and developed a comprehensive e-commerce platform for Siwaka Enterprises, enabling seamless online transactions and secure payment processing. Implemented user-friendly navigation and customizable product listings.</p>
+        <p class="project-client">Client: Siwaka Enterprises</p>
+        <p class="project-completion">Completion Date: April 2024</p>
+    </div>
+</div>
+
+
+</body>
+</html>
