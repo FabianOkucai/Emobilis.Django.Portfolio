@@ -1,52 +1,28 @@
+{% extends 'layout.html' %}
 {% load static %}
+{% block body %}
 
-<html lang="en">
-<head>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
-    <meta charset="UTF-8">
-    <title>About</title>
-    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+<title>About</title>
 
-</head>
-<body>
+<div class="gallery">
+    <img src="{% static 'img/port2.WEBP' %}"  width="500"  alt="back" class="image" >
+    <img src="{% static 'img/cc7.AVIF' %}"  width="300" height="300" alt="back" class="image" >
+    <img src="{% static 'img/contact5.AVIF' %}"  width="800" height="300" alt="back" class="image" >
 
-    <ul class="nav nav-underline">
-        <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/about/">About</a>
-        </li>
-        <li class="nav-item">
-            <a  class="nav-link" href="/services/">Services</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/contact/">Contact</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/project/">Project</a>
-        </li>
-    
-    </ul>
+</div>
 
-        
-    <div class="gallery">
-        <img src="{% static 'img/port2.WEBP' %}"  width="500"  alt="back" class="image" >
-        <img src="{% static 'img/cc7.AVIF' %}"  width="300" height="300" alt="back" class="image" >
-        <img src="{% static 'img/contact5.AVIF' %}"  width="800" height="300" alt="back" class="image" >
-    
-    </div>
-    
-    
-    <div class="container">
-        <h1>ABOUT ?</h1>
-        <p>Welcome to my portfolio. I am a passionate developer dedicated to delivering exceptional solutions tailored to your needs. With years of experience in the industry, I pride myself on my innovative approach and commitment to excellence.</p>
-        <p>I believe in fostering strong relationships with my clients, understanding their unique requirements, and providing personalized services that exceed expectations. Whether you're looking to enhance your online presence, streamline your business processes, or develop cutting-edge applications, I am here to help you achieve your goals.</p>
-        <p>I am an expert in the following respective fields,web development and design to digital marketing and beyond.I stay ahead of the curve by continuously learning and adapting to the latest technologies and trends, ensuring that I deliver solutions that are not only effective but also future-proof.</p>
-        <p>Customer satisfaction is my top priority, and I strive to deliver results that make a meaningful impact on your business. I understand that every project is unique, which is why I take the time to listen to your needs, communicate transparently, and collaborate closely with you every step of the way.</p>
-        <p>Whether you're a small startup or a large enterprise, I have the expertise and resources to help you succeed. Get in touch with me today to learn more about how I can empower your business and take it to the next level.</p>
-        <p>Contact Okucai Fabian to learn more</p>
-    </div>
 
-</body>
-</html>
+<div class="container">
+    <h1>ABOUT ?</h1>
+    <p>Welcome to my portfolio. I am a passionate developer dedicated to delivering exceptional solutions tailored to your needs. With years of experience in the industry, I pride myself on my innovative approach and commitment to excellence.</p>
+    <p>I believe in fostering strong relationships with my clients, understanding their unique requirements, and providing personalized services that exceed expectations. Whether you're looking to enhance your online presence, streamline your business processes, or develop cutting-edge applications, I am here to help you achieve your goals.</p>
+    <p>I am an expert in the following respective fields,web development and design to digital marketing and beyond.I stay ahead of the curve by continuously learning and adapting to the latest technologies and trends, ensuring that I deliver solutions that are not only effective but also future-proof.</p>
+    <p>Customer satisfaction is my top priority, and I strive to deliver results that make a meaningful impact on your business. I understand that every project is unique, which is why I take the time to listen to your needs, communicate transparently, and collaborate closely with you every step of the way.</p>
+    <p>Whether you're a small startup or a large enterprise, I have the expertise and resources to help you succeed. Get in touch with me today to learn more about how I can empower your business and take it to the next level.</p>
+    <p>Contact Okucai Fabian to learn more</p>
+</div>
+
+{% endblock %}
+

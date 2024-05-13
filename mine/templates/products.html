@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block body %}
+
+
+
+<title>Products</title>
+
+<h3>Products</h3>
+
+<div class="row">
+    {% for product in products %}
+  <div class="col-md-4">
+      <img width="100" src="/media/{{ product.product_image }}" alt="{{ product.product_image }}">
+      <p>{{ product.product_name  }}</p>
+      <p>{{ product.product_price  }}</p>
+  </div>
+    {% endfor %}
+</div>
+
+<table class="table table-striped container">
+    <thead>
+        <th>Name</th> 
+        <th>Price</th> 
+        <th>Description</th> 
+        <th>Image</th> 
+
+    </thead>
+    <tbody>
+
+    {% for product in products %}
+
+    <tr>
+
+        <td>{{ product.product_name }}</td> 
+        <td>{{ product.product_price }}</td> 
+        <td>{{ product.product_description }}</td> 
+
+        <td><img src="/media/{{product.product_image}}" alt="{{product.product_image}}"></td> 
+    
+    </tr>
+
+    {% endfor %}
+
+    </tbody>
+</table>
+
+
+
+{% endblock %}

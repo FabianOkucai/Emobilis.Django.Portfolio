@@ -1,76 +1,52 @@
+{% extends 'layout.html' %}
 {% load static %}
+{% block body %}
 
-<html lang="en">
-<head>
 
-    <meta charset="UTF-8">
-    <title>Services</title>
-    <link rel="stylesheet" href="{% static 'css\style.css' %}">
 
-</head>
-<body>
+<div class="gallery">
+    <img src="{% static 'img/cc2.AVIF' %}"  width="500"  alt="back" class="image" >
+    <img src="{% static 'img/cc4.AVIF' %}"  width="500"  alt="back" class="image" >
+    <img src="{% static 'img/cc3.AVIF' %}"  width="500"  alt="back" class="image" >
 
-    <ul class="nav nav-underline">
-        <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/about/">About</a>
-        </li>
-        <li class="nav-item">
-            <a  class="nav-link" href="/services/">Services</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/contact/">Contact</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/project/">Project</a>
-        </li>
-    
-    </ul>
-    
-    <div class="gallery">
-        <img src="{% static 'img/cc2.AVIF' %}"  width="500"  alt="back" class="image" >
-        <img src="{% static 'img/cc4.AVIF' %}"  width="500"  alt="back" class="image" >
-        <img src="{% static 'img/cc3.AVIF' %}"  width="500"  alt="back" class="image" >
-    
-    </div>
-    
+</div>
 
-    <div class="container">
-        <h1>Services</h1>
-        <div class="services">
-            <div class="service">
-                <h2>Web Design</h2>
-                <p>I create beautiful and responsive websites tailored to your needs.</p>
-            </div>
-            <div class="service">
-                <h2>Graphic Design</h2>
-                <p>I design eye-catching graphics for your business.</p>
-            </div>
-            <div class="service">
-                <h2>Digital Marketing</h2>
-                <p>I provide strategic digital marketing solutions.</p>
-            </div>
-            <div class="service">
-                <h2>Mobile App Development</h2>
-                <p>I turn your ideas into reality with custom mobile app development services.</p>
-            </div>
-            <div class="service">
-                <h2>SEO Optimization</h2>
-                <p>I provide you with website's visibility and rank higher in search engine results.</p>
-            </div>
-            
-            <div class="service">
-                <h2>E-commerce Solutions</h2>
-                <p> I manage your online store with comprehensive e-commerce solutions.</p>
-            </div>
-            <div class="service">
-                <h2>Content Writing</h2>
-                <p>I create engaging and informative content that resonates with your audience.</p>
-            </div>
+
+<title>Services</title>
+
+<div class="container">
+    <h1>Services</h1>
+    <div class="services">
+        <div class="service">
+            <h2>Web Design</h2>
+            <p>I create beautiful and responsive websites tailored to your needs.</p>
+        </div>
+        <div class="service">
+            <h2>Graphic Design</h2>
+            <p>I design eye-catching graphics for your business.</p>
+        </div>
+        <div class="service">
+            <h2>Digital Marketing</h2>
+            <p>I provide strategic digital marketing solutions.</p>
+        </div>
+        <div class="service">
+            <h2>Mobile App Development</h2>
+            <p>I turn your ideas into reality with custom mobile app development services.</p>
+        </div>
+        <div class="service">
+            <h2>SEO Optimization</h2>
+            <p>I provide you with website's visibility and rank higher in search engine results.</p>
+        </div>
+        
+        <div class="service">
+            <h2>E-commerce Solutions</h2>
+            <p> I manage your online store with comprehensive e-commerce solutions.</p>
+        </div>
+        <div class="service">
+            <h2>Content Writing</h2>
+            <p>I create engaging and informative content that resonates with your audience.</p>
         </div>
     </div>
+</div>
 
-</body>
-</html>
+{% endblock %}

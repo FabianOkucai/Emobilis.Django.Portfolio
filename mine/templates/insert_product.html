@@ -1,0 +1,22 @@
+
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block body %}
+
+<div class="container">
+
+<h2>Insert products</h2>
+<form action="/insert_product/" method="POST" enctype="multipart/form-data">
+    
+    {% csrf_token %}
+
+    <input class="form-control"  type="text" placeholder="Product Name" name="product_name"> <br> <br>
+    <input class="form-control" type="number" placeholder="Price" name="product_price"> <br> <br>
+    <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Description" name="product_description"></textarea> <br><br>
+    <input type="file" name="product_image" required>
+    <input type="submit" value="Submit" class="btn btn-success">
+    
+</form>
+{% endblock %}

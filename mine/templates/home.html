@@ -1,53 +1,22 @@
+{% extends 'layout.html' %}
 {% load static %}
-
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="{% static 'css\style.css' %}">
-
-</head>
-
-<body>
-
-    <ul class="nav nav-underline">
-        <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/about/">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/services/">Services</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/contact/">Contact</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/project/">Project</a>
-        </li>
-
-    </ul>
+{% block body %}
 
 
 
+<title>Home</title>
+<div class="container">
+    <h1>Welcome to my Portfolio!</h1>
+    <p>I am, Fabian Okucai</p>
+    <p>Explore my portfolio to discover a diverse range of projects showcasing my expertise in front-end and back-end development, UI/UX design, and more.</p>
+    <p>Discover amazing services tailored by me just for you.</p>
+</div>
 
-    <div class="container">
-        <h1>Welcome to my Portfolio!</h1>
-        <p>I am, Fabian Okucai</p>
-        <p>Explore my portfolio to discover a diverse range of projects showcasing my expertise in front-end and back-end development, UI/UX design, and more.</p>
-        <p>Discover amazing services tailored by me just for you.</p>
-    </div>
+<div class="gallery">
+    <img src="{% static 'img/port4.JPEG' %}" width="500" alt="back" class="image">
+    <img src="{% static 'img/cc4.AVIF' %}" width="500" alt="back" class="image">
+    <img src="{% static 'img/port1.WEBP' %}" width="500" alt="back" class="image">
 
-    <div class="gallery">
-        <img src="{% static 'img/port4.JPEG' %}" width="500" alt="back" class="image">
-        <img src="{% static 'img/cc4.AVIF' %}" width="500" alt="back" class="image">
-        <img src="{% static 'img/port1.WEBP' %}" width="500" alt="back" class="image">
+</div>
 
-    </div>
-
-</body>
-
-</html>
+{% endblock %}
